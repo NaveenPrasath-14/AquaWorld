@@ -258,7 +258,7 @@ function Home() {
         </div>
 
         <img
-          src="/images/goldfish-orange.jpg"
+          src={`${import.meta.env.BASE_URL}images/goldfish-orange.jpg`}
           alt="Colourful ornamental fish"
         />
       </section>
@@ -273,29 +273,29 @@ function Home() {
             <p>Watch our actual aquarium fish swimming in their tanks.</p>
           </div>
 
-          <div className="aquaworld-video-grid">
-            {Array.from({ length: 15 }, (_, index) => index + 1).map(
-              (videoNumber) => (
-                <div className="aquaworld-video-card" key={videoNumber}>
-                  <video
-                    controls
-                    playsInline
-                    preload="metadata"
-                    poster={`/video-posters/fish${videoNumber}.jpg`}
+         <div className="aquaworld-video-grid">
+            {fishList
+            .filter((fish) => fish.video)
+           .map((fish) => (
+               <div className="aquaworld-video-card" key={fish.id}>
+                   <video
+                   controls
+                   playsInline
+                   preload="metadata"
+                   poster={`${import.meta.env.BASE_URL}${fish.image.replace(/^\/+/, "")}`}
                   >
-                    <source
-                       src={`${import.meta.env.BASE_URL}videos/fish${videoNumber}.mp4`}
-                       type="video/mp4"
-                    />
-                  </video>
+          <source
+            src={`${import.meta.env.BASE_URL}${fish.video.replace(/^\/+/, "")}`}
+            type="video/mp4"
+          />
+        </video>
 
-                  <div className="aquaworld-video-caption">
-                    <span>AQUA WORLD COLLECTION</span>
-                  </div>
-                </div>
-              )
-            )}
-          </div>
+        <div className="aquaworld-video-caption">
+          <span>{fish.name}</span>
+        </div>
+      </div>
+    ))}
+</div>
         </div>
       </section>
 

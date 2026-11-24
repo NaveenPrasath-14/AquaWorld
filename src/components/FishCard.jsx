@@ -12,9 +12,13 @@ function FishCard({ fish }) {
     ? `${import.meta.env.BASE_URL}${fish.video.replace(/^\/+/, "")}`
     : ""
 
+    console.log("Fish:", fish.name)
+console.log("Image path:", fish.image)
+console.log("Image URL:", imageUrl)
+console.log("Video URL:", videoUrl)
+
   return (
     <article className="fish-card">
-
       {fish.video ? (
         <video
           className="fish-card-video"
@@ -36,7 +40,6 @@ function FishCard({ fish }) {
       )}
 
       <div className="fish-card-body">
-
         <div className="fish-card-top">
           <span>{fish.category}</span>
           <span>{fish.colour}</span>
@@ -44,7 +47,9 @@ function FishCard({ fish }) {
 
         <h3>{fish.name}</h3>
 
-        <p className="muted">{fish.size} · {fish.age} old</p>
+        <p className="muted">
+          {fish.size} · {fish.age} old
+        </p>
 
         <div className="fish-card-bottom">
           <strong>₹{fish.price}</strong>
@@ -53,7 +58,6 @@ function FishCard({ fish }) {
             <Fish size={15} /> View
           </Link>
         </div>
-
       </div>
     </article>
   )
