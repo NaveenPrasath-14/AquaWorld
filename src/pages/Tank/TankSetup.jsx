@@ -187,7 +187,7 @@ function TankSetup() {
       <div className="tank-page-hero">
         <div className="tank-page-hero-image">
           <img
-            src="/video-posters/fish2.jpg"
+            src={`${import.meta.env.BASE_URL}video-posters/fish2.jpg`}
             alt="Goldfish swimming inside an aquarium tank"
           />
         </div>

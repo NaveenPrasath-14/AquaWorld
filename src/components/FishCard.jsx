@@ -4,23 +4,35 @@ import { Fish } from "lucide-react"
 import "./FishCard.css"
 
 function FishCard({ fish }) {
+  const imageUrl = fish.image
+    ? `${import.meta.env.BASE_URL}${fish.image.replace(/^\/+/, "")}`
+    : ""
+
+  const videoUrl = fish.video
+    ? `${import.meta.env.BASE_URL}${fish.video.replace(/^\/+/, "")}`
+    : ""
+
   return (
     <article className="fish-card">
 
       {fish.video ? (
         <video
           className="fish-card-video"
-          poster={fish.image}
+          poster={imageUrl}
           muted
           loop
           playsInline
           controls
           preload="none"
         >
-          <source src={fish.video} type="video/mp4" />
+          <source src={videoUrl} type="video/mp4" />
         </video>
       ) : (
-        <img src={fish.image} alt={fish.name} loading="lazy" />
+        <img
+          src={imageUrl}
+          alt={fish.name}
+          loading="lazy"
+        />
       )}
 
       <div className="fish-card-body">

@@ -44,9 +44,18 @@ function Home() {
     <>
       <section className="aquapro-hero aquaworld-showcase-hero">
         <div className="aquapro-hero-image aquaworld-showcase-fish">
-          <video autoPlay muted loop playsInline poster="/video-posters/fish15.jpg">
-            <source src="/videos/fish15.mp4" type="video/mp4" />
-          </video>
+        <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={`${import.meta.env.BASE_URL}video-posters/fish15.jpg`}
+         >
+         <source
+            src={`${import.meta.env.BASE_URL}videos/fish15.mp4`}
+           type="video/mp4"
+         />
+        </video>
         </div>
 
         <div className="aquapro-hero-shade"></div>
@@ -110,7 +119,7 @@ function Home() {
       <section className="aquapro-intro container">
         <div className="aquapro-intro-image">
           <img
-            src="/images/blue-discus.jpg"
+            src={`${import.meta.env.BASE_URL}images/blue-discus.jpg`}
             alt="Beautiful ornamental fish"
           />
 
@@ -275,8 +284,8 @@ function Home() {
                     poster={`/video-posters/fish${videoNumber}.jpg`}
                   >
                     <source
-                      src={`/videos/fish${videoNumber}.mp4`}
-                      type="video/mp4"
+                       src={`${import.meta.env.BASE_URL}videos/fish${videoNumber}.mp4`}
+                       type="video/mp4"
                     />
                   </video>
 

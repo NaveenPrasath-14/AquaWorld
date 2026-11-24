@@ -25,7 +25,10 @@ function Navbar() {
     <header className="navbar">
       <div className="nav-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
-          <img src="/aquaworld-logo.jpeg" alt="Aqua World" />
+          <img
+             src={`${import.meta.env.BASE_URL}aquaworld-logo.jpeg`}
+             alt="Aqua World"
+          />
         </Link>
         <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
