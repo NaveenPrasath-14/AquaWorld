@@ -258,7 +258,7 @@ function Home() {
         </div>
 
         <img
-          src={`${import.meta.env.BASE_URL}images/goldfish-orange.jpg`}
+          src={`${import.meta.env.BASE_URL}images/flowerhorn.jpg`}
           alt="Colourful ornamental fish"
         />
       </section>

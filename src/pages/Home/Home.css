@@ -496,14 +496,13 @@
   }
 }
 
-
-.aquapro-hero-image video {
+.aquapro-hero-image video{
   width: 100%;
   height: 100%;
   position: absolute;
   inset: 0;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center;
 }
 
 .aquaworld-video-section {
@@ -513,7 +512,7 @@
 
 .aquaworld-video-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -529,6 +528,7 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
+  object-position: center;
   background: #082c42;
 }
 
