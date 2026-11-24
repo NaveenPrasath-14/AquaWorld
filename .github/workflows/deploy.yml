@@ -41,11 +41,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Check build folder
+        run: ls -la dist
+
       - name: Upload build
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
+       uses: actions/upload-pages-artifact@v3
+       with:
+       path: ./dist
+       name: github-pages
 
       - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      id: deployment
+      uses: actions/deploy-pages@v4
+      with:
+      artifact_name: github-pages
