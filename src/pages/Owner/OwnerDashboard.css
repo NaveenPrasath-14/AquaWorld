@@ -1,0 +1,71 @@
+.stats-grid {
+  margin: 25px 0;
+}
+
+.stat-card {
+  background: #ecfeff;
+}
+
+.stat-card span {
+  display: block;
+  color: #64748b;
+}
+
+.stat-card strong {
+  display: block;
+  margin-top: 12px;
+  color: #0e7490;
+  font-size: 30px;
+}
+
+.owner-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.tank-admin-form {
+  margin-bottom: 25px;
+}
+
+.tank-admin-form h2 {
+  margin-top: 0;
+}
+
+.tank-cancel {
+  margin-left: 10px;
+}
+
+.tank-admin-list {
+  margin-bottom: 25px;
+}
+
+.tank-admin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tank-admin-row button {
+  border: 0;
+  background: transparent;
+  color: #0e7490;
+  font-weight: 700;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tank-admin-row button:last-child {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .tank-admin-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

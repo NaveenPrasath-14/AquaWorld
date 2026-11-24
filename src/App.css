@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #17394b;
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page-wrap {
+  min-height: 70vh;
+  background: #ffffff;
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+.section-title {
+  margin: 0 0 8px;
+  color: #17394b;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.muted {
+  color: #718792;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 0;
+  border-radius: 3px;
+  padding: 12px 18px;
+  background: #0e8298;
+  color: white;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #09677b;
+}
+
+.btn-light {
+  background: #e9f9fb;
+  color: #0e8298;
+}
+
+.form-card, .panel, .stat-card {
+  background: white;
+  border: 1px solid #e2edf0;
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(15, 55, 75, .05);
+  color: #17394b;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 14px;
+  color: #496573;
+}
+
+.field input, .field select, .field textarea, .toolbar input, .toolbar select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6e4e9;
+  border-radius: 5px;
+  background: white;
+  color: #17394b;
+}
+
+.field textarea {
+  min-height: 90px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th, td {
+  padding: 13px;
+  text-align: left;
+  border-bottom: 1px solid #e4edf0;
+}
+
+th {
+  background: #eff9fa;
+  color: #0e8298;
+}
+
+.status {
+  display: inline-block;
+  background: #e1f8fc;
+  color: #0e7490;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 36px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+
+/* Aqua World red and black brand theme */
+:root { color-scheme: dark; --aqua-red: #ef3e49; --aqua-red-light: #ff737b; --aqua-bg: #090709; --aqua-panel: #171014; --aqua-border: #432027; --aqua-text: #f7eeee; --aqua-muted: #c0aeb1; }
+html, body, #root { min-height: 100%; }
+body { background: var(--aqua-bg) !important; color: var(--aqua-text) !important; }
+.page-wrap { background: var(--aqua-bg) !important; color: var(--aqua-text) !important; }
+.section-title, h1, h2, h3, h4 { color: var(--aqua-text); }
+.muted, p.muted { color: var(--aqua-muted) !important; }
+.btn, button.btn, .aquapro-button { background: var(--aqua-red) !important; color: #fff !important; border-color: var(--aqua-red) !important; }
+.btn:hover, .aquapro-button:hover { background: #c92735 !important; }
+.btn-light { background: #2b151b !important; color: #ff858b !important; border: 1px solid #71313a !important; }
+.form-card, .panel, .stat-card, .fish-card, .review-card, .aquapro-service-card, .aquapro-feature { background: var(--aqua-panel) !important; color: var(--aqua-text) !important; border-color: var(--aqua-border) !important; box-shadow: 0 12px 30px rgba(0,0,0,.24) !important; }
+.field, label { color: #e8dadd; }
+.field input, .field select, .field textarea, .toolbar input, .toolbar select, input, select, textarea { background: #100b0d !important; color: #fff !important; border-color: #593039 !important; }
+input::placeholder, textarea::placeholder { color: #9c858a; }
+table { color: var(--aqua-text); }
+th { background: #2b151b !important; color: #ff858b !important; }
+td, th { border-color: #432027 !important; }
+.status { background: #3a171e !important; color: #ff9298 !important; }
+.aquapro-hero, .aquaworld-showcase-hero { background-color: #050405 !important; }
+.aquapro-intro, .aquapro-services, .aquapro-fish-section, .aquapro-testimonials, .aquapro-video-section, .aquaworld-video-section, .aquapro-care-row { background: #0d090b !important; color: var(--aqua-text) !important; }
+.aquapro-intro-copy, .aquapro-feature-copy, .aquapro-section-head, .aquapro-label, .aquapro-overline { color: var(--aqua-text) !important; }
+.aquapro-service-card, .aquapro-video-card, .aquaworld-video-card { background: #171014 !important; border: 1px solid #432027 !important; color: var(--aqua-text) !important; }
+.aquapro-contact-cta { background: linear-gradient(120deg, #260d13, #10090c) !important; color: #fff !important; }
+.aquapro-hero-link, .aquapro-under-link, .aquapro-review-link { color: #ff737b !important; border-color: #ef3e49 !important; }
+footer { background: #050405 !important; color: #eadfe0 !important; border-top: 1px solid #432027; }
+@media (max-width: 850px) { .brand img { width: 100px; height: 58px; } }

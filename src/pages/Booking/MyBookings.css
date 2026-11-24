@@ -1,0 +1,54 @@
+
+.booking-message {
+  padding: 14px 18px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.booking-message.success {
+  background: rgba(40, 170, 100, 0.12);
+  border: 1px solid #28aa64;
+  color: #65d99a;
+}
+
+.booking-message.error {
+  background: rgba(232, 59, 70, 0.12);
+  border: 1px solid #e83b46;
+  color: #ff737b;
+}
+
+.booking-edit {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-edit input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  border: 1px solid #432027;
+  border-radius: 6px;
+  background: #171014;
+  color: #fff;
+}
+
+.booking-confirm-box {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #e83b46;
+  border-radius: 8px;
+  background: #171014;
+}
+
+.booking-confirm-box p {
+  margin-bottom: 12px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

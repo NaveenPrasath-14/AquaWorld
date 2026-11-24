@@ -1,0 +1,35 @@
+.footer {
+  padding: 48px 0 35px;
+  background: #082f43;
+  color: white;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer h2 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+  color: #e8fbff;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.footer p, .footer small {
+  color: #b7d9e5;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: #d5edf4;
+  font-size: 12px;
+}

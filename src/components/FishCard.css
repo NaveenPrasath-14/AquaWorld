@@ -1,0 +1,191 @@
+.fish-card {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #351c22;
+  border-radius: 12px;
+  background: #100b0e;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.fish-card:hover {
+  transform: translateY(-5px);
+  border-color: #a92e3b;
+  box-shadow: 0 12px 25px rgba(239, 62, 73, 0.15);
+}
+
+.fish-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  object-position: center;
+  background: #090709;
+}
+
+
+.fish-card-body {
+  padding: 17px;
+}
+
+
+.fish-card-top,
+.fish-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.fish-card-top {
+  color: #ff737b;
+  font-size: 12px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+
+.fish-card h3 {
+  margin: 10px 0 6px;
+  color: #fff0f1;
+  font-size: 18px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.fish-card p {
+  color: #b9a5aa;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+
+.fish-card-bottom {
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.fish-card-bottom strong {
+  color: #ff535f;
+  font-size: 20px;
+}
+
+.fish-card-video {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #090709;
+}
+
+@media (min-width: 1200px) {
+  .fish-card img {
+    height: 210px;
+  }
+
+  .fish-card-video {
+    height: 240px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .fish-card img {
+    height: 180px;
+  }
+
+  .fish-card-video {
+    height: 200px;
+  }
+
+  .fish-card-body {
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .fish-card {
+    border-radius: 10px;
+  }
+
+  .fish-card:hover {
+    transform: none;
+  }
+
+  .fish-card img {
+    height: 165px;
+  }
+
+  .fish-card-video {
+    height: 190px;
+  }
+
+  .fish-card-body {
+    padding: 12px;
+  }
+
+  .fish-card h3 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .fish-card p {
+    font-size: 13px;
+  }
+
+  .fish-card-top {
+    font-size: 11px;
+  }
+
+  .fish-card-bottom strong {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .fish-card img {
+    height: 140px;
+  }
+
+  .fish-card-video {
+    height: 165px;
+  }
+
+  .fish-card-body {
+    padding: 10px;
+  }
+
+  .fish-card h3 {
+    font-size: 15px;
+  }
+
+  .fish-card-bottom strong {
+    font-size: 16px;
+  }
+}
+
+
+
+.fish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .fish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

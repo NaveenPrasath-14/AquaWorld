@@ -1,0 +1,28 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width: min(460px, 100%);
+}
+
+.auth-card h1 {
+  margin: 0;
+}
+
+.auth-card a {
+  color: #0e7490;
+  font-weight: 700;
+}
+
+.full-btn {
+  width: 100%;
+}
+
+.error-text {
+  color: #dc2626;
+  background: #fef2f2;
+  padding: 10px;
+  border-radius: 8px;
+}

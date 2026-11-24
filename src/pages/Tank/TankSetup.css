@@ -1,0 +1,72 @@
+.tank-page {background:#f8faf9;min-height:100vh;padding-bottom:65px;}
+.tank-page-hero {min-height:390px;background:#07131b;display:grid;grid-template-columns:1fr 1fr;align-items:center;overflow:hidden;}
+.tank-page-hero-image {height:390px;overflow:hidden;}
+.tank-page-hero-image img {width:100%;height:100%;object-fit:cover;display:block;}
+.tank-page-hero-copy {padding:45px clamp(25px,7vw,100px);color:white;}
+.tank-page-hero-copy > span {color:#c3a345;font-size:10px;font-weight:700;letter-spacing:2px;}
+.tank-page-hero-copy h1 {margin:20px 0;color:white;font:400 clamp(38px,4.5vw,60px)/1.1 Georgia,serif;}
+.tank-page-hero-copy h1 em {color:#d1b04a;font-weight:400;}
+.tank-page-hero-copy p {max-width:440px;color:#c2cbd0;font-size:14px;line-height:1.9;}
+.tank-page-content {padding-top:55px;}
+.tank-options {margin:25px 0 40px;}
+.tank-options strong {color:#0e7490;font-size:24px;}
+.tank-form {max-width:780px;margin:0 auto 50px;}
+.tank-form h2 {margin-top:0;}
+@media(max-width:700px){.tank-page-hero{grid-template-columns:1fr;}.tank-page-hero-image{height:260px;}.tank-page-hero-copy{padding:35px 25px 42px;}.tank-page-content{padding-top:38px;}}
+
+
+
+.booking-message {
+  padding: 14px 18px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.booking-message.success {
+  background: rgba(40, 170, 100, 0.12);
+  border: 1px solid #28aa64;
+  color: #65d99a;
+}
+
+.booking-message.error {
+  background: rgba(232, 59, 70, 0.12);
+  border: 1px solid #e83b46;
+  color: #ff737b;
+}
+
+.tank-success {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 25px;
+}
+
+.booking-id-box {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px dashed #e83b46;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-id-box strong {
+  color: #ff626b;
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.booking-confirm-box {
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #e83b46;
+  border-radius: 8px;
+  background: #171014;
+}

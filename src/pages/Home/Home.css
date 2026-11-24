@@ -1,0 +1,673 @@
+.aquapro-hero {
+  min-height: 610px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #082c42;
+  color: white;
+}
+
+.aquapro-hero-image {
+  position: absolute;
+  inset: 0;
+  background: url("/images/blue-discus.jpg") center 42% / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.aquapro-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(4, 35, 52, .9) 0%, rgba(4, 35, 52, .65) 43%, rgba(4, 35, 52, .08) 100%);
+}
+
+.aquapro-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+
+.aquapro-overline,
+.aquapro-label {
+  color: #0e879e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.aquapro-overline {
+  color: #a9e7f2;
+}
+
+.aquapro-hero h1 {
+  margin: 23px 0 18px;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 78px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.aquapro-hero h1 em,
+.aquapro-intro h2 em,
+.aquapro-section-head h2 em,
+.aquapro-feature-copy h2 em,
+.aquapro-care-row h2 em,
+.aquapro-contact-cta h2 em {
+  color: #36c1d5;
+  font-weight: 400;
+}
+
+.aquapro-hero-content p {
+  max-width: 480px;
+  color: #d0e4eb;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.aquapro-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.aquapro-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  background: #0e8298;
+  color: white;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  transition: background .2s, transform .2s;
+}
+
+.aquapro-button:hover {
+  background: #09677b;
+  transform: translateY(-2px);
+}
+
+.aquapro-hero-link {
+  color: white;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(255, 255, 255, .6);
+  padding-bottom: 8px;
+}
+
+.aquapro-hero-caption {
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 4%;
+  right: 4%;
+  display: flex;
+  justify-content: space-between;
+  color: #c2e0e9;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.aquapro-intro {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.aquapro-intro-image {
+  position: relative;
+}
+
+.aquapro-intro-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.aquapro-image-note {
+  position: absolute;
+  right: -22px;
+  bottom: 25px;
+  padding: 18px 22px;
+  min-width: 205px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(17, 57, 73, .13);
+  border-left: 3px solid #0e8298;
+}
+
+.aquapro-image-note strong,
+.aquapro-image-note span {
+  display: block;
+}
+
+.aquapro-image-note strong {
+  color: #17394b;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.aquapro-image-note span {
+  margin-top: 5px;
+  color: #718792;
+  font-size: 10px;
+}
+
+.aquapro-intro h2,
+.aquapro-section-head h2,
+.aquapro-feature-copy h2,
+.aquapro-care-row h2 {
+  margin: 15px 0;
+  color: #17394b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 49px);
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.aquapro-intro-copy p,
+.aquapro-section-head p,
+.aquapro-feature-copy p,
+.aquapro-care-row p {
+  color: #718792;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.aquapro-under-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  color: #0e8298;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.aquapro-services {
+  padding: 85px 0;
+  background: #f3fafb;
+}
+
+.aquapro-section-head {
+  margin-bottom: 35px;
+}
+
+.aquapro-section-head h2 {
+  margin-bottom: 8px;
+}
+
+.aquapro-service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.aquapro-service-card {
+  padding: 28px 22px;
+  min-height: 235px;
+  background: white;
+  border: 1px solid #e4eef0;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.aquapro-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(16, 57, 77, .08);
+}
+
+.aquapro-service-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  color: #0e8298;
+  background: #e9f9fb;
+  border-radius: 50%;
+}
+
+.aquapro-service-card h3 {
+  margin: 20px 0 9px;
+  color: #17394b;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.aquapro-service-card p {
+  min-height: 60px;
+  color: #718792;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.aquapro-service-card > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #0e8298;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.aquapro-fish-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.aquapro-section-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+}
+
+.aquapro-fish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.aquapro-fish-grid .fish-card {
+  border: 1px solid #e5edef;
+  border-radius: 3px;
+  background: white;
+  box-shadow: none;
+}
+
+.aquapro-fish-grid .fish-card img {
+  height: 210px;
+}
+
+.aquapro-fish-grid .fish-card h3 {
+  color: #17394b;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.aquapro-fish-grid .fish-card p {
+  color: #81939b;
+}
+
+.aquapro-fish-grid .fish-card-bottom strong {
+  color: #0e8298;
+}
+
+.aquapro-feature {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  min-height: 460px;
+  background: #eff9fa;
+}
+
+.aquapro-feature-photo {
+  min-height: 460px;
+  background: url("/images/goldfish-orange.jpg") center / cover no-repeat;
+}
+
+.aquapro-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 65px 10%;
+}
+
+.aquapro-feature-copy p {
+  max-width: 430px;
+  margin-bottom: 25px;
+}
+
+.aquapro-care-row {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.aquapro-care-row img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.aquapro-testimonials {
+  padding: 85px 0;
+  background: #f3fafb;
+}
+
+.aquapro-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.aquapro-review-grid .review-card {
+  border: 1px solid #e3edef;
+  border-radius: 3px;
+  background: white;
+}
+
+.aquapro-review-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.aquapro-contact-cta {
+  padding: 85px 20px;
+  text-align: center;
+  background: #073b56;
+}
+
+.aquapro-contact-cta .aquapro-label {
+  color: #9be5f0;
+}
+
+.aquapro-contact-cta h2 {
+  margin: 18px 0 28px;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.aquapro-contact-cta > div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.aquapro-cta-light {
+  min-height: 48px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, .55);
+  color: white;
+  font-size: 11px;
+}
+
+@media (max-width: 950px) {
+  .aquapro-intro {
+    gap: 45px;
+  }
+
+  .aquapro-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aquapro-fish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .aquapro-hero {
+    min-height: 550px;
+  }
+
+  .aquapro-hero-shade {
+    background: linear-gradient(90deg, rgba(4, 35, 52, .88), rgba(4, 35, 52, .36));
+  }
+
+  .aquapro-intro,
+  .aquapro-feature,
+  .aquapro-care-row {
+    grid-template-columns: 1fr;
+  }
+
+  .aquapro-intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 45px;
+  }
+
+  .aquapro-intro-image img {
+    height: 300px;
+  }
+
+  .aquapro-image-note {
+    right: 10px;
+  }
+
+  .aquapro-services,
+  .aquapro-testimonials {
+    padding: 60px 0;
+  }
+
+  .aquapro-section-head-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .aquapro-feature-photo {
+    min-height: 280px;
+  }
+
+  .aquapro-feature-copy {
+    padding: 45px 6%;
+  }
+
+  .aquapro-care-row {
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .aquapro-care-row img {
+    height: 260px;
+  }
+
+  .aquapro-review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .aquapro-service-grid,
+  .aquapro-fish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aquapro-hero h1 {
+    font-size: 48px;
+  }
+
+  .aquapro-hero-caption {
+    font-size: 7px;
+  }
+}
+
+
+.aquapro-hero-image video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.aquaworld-video-section {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.aquaworld-video-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aquaworld-video-card {
+  overflow: hidden;
+  border: 1px solid #e4edef;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(17, 57, 73, .06);
+}
+
+.aquaworld-video-card video {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #082c42;
+}
+
+.aquaworld-video-caption {
+  padding: 13px 14px 15px;
+}
+
+.aquaworld-video-caption span,
+.aquaworld-video-caption strong {
+  display: block;
+}
+
+.aquaworld-video-caption span {
+  color: #0e8298;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.aquaworld-video-caption strong {
+  margin-top: 6px;
+  color: #17394b;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (max-width: 1050px) {
+  .aquaworld-video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .aquaworld-video-section {
+    padding: 55px 0;
+  }
+
+  .aquaworld-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .aquaworld-video-card video {
+    height: 180px;
+  }
+}
+
+@media (max-width: 390px) {
+  .aquaworld-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aquaworld-video-card video {
+    height: 240px;
+  }
+}
+
+
+/* Betta-inspired showcase hero based on the supplied reference */
+.aquaworld-showcase-hero {
+  min-height: min(790px, calc(100vh - 70px));
+  background: #03090e;
+  isolation: isolate;
+}
+.aquaworld-showcase-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .2;
+  background-image: linear-gradient(135deg, transparent 49.7%, rgba(180,205,215,.22) 50%, transparent 50.3%);
+  background-size: 210px 210px;
+}
+.aquaworld-showcase-fish {
+  inset: 0 auto 0 0;
+  width: 57%;
+  background: radial-gradient(ellipse at 48% 48%, #36120f 0%, #080e13 55%, #03090e 100%);
+}
+.aquaworld-showcase-fish video {
+  object-fit: contain;
+  object-position: center;
+  padding: 35px 0 45px 4%;
+  filter: saturate(1.15) contrast(1.08);
+}
+.aquaworld-showcase-hero .aquapro-hero-shade {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(2,8,13,.03) 0%, rgba(2,8,13,.05) 43%, #03090e 62%, #03090e 100%);
+}
+.aquaworld-hero-brand {
+  position: absolute;
+  z-index: 3;
+  top: 24px;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f4f4f4;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.aquaworld-hero-brand .brand-mark {font-family: Georgia,serif;font-size: 36px;letter-spacing: -5px;font-style: italic;}
+.aquaworld-hero-brand small {display:block;margin-top:3px;font-size:8px;letter-spacing:2px;color:#aab4ba;}
+.aquaworld-hero-count {
+  position:absolute;z-index:3;right:3%;top:13%;height:72%;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#e7e7e7;font:italic 15px Georgia,serif;
+}
+.aquaworld-hero-count span {width:1px;flex:1;background:linear-gradient(#bda14d,#e8e8e8);margin:12px 0;}
+.aquaworld-showcase-copy {
+  z-index:2;
+  width: min(48%, 650px);
+  margin-left: 56%;
+  padding: 110px 7% 90px 0;
+}
+.aquaworld-showcase-copy .aquapro-overline {color:#d4b34e;letter-spacing:3px;}
+.aquaworld-showcase-copy h1 {
+  margin: 20px 0 8px;
+  font-family: Georgia,serif;
+  font-size: clamp(54px,6vw,82px);
+  line-height:.98;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.aquaworld-showcase-copy h1 span {color:#d7b344;}
+.aquaworld-showcase-copy h2 {margin:0 0 24px;color:#fff;font:italic 19px Georgia,serif;letter-spacing:2px;}
+.aquaworld-showcase-copy p {max-width:470px;color:#c5cbd0;font-size:14px;line-height:1.9;}
+.aquaworld-showcase-copy .aquapro-button {background:#b89532;color:#080b0e;}
+.aquaworld-showcase-copy .aquapro-button:hover {background:#d2b24e;}
+.aquaworld-showcase-copy .aquapro-hero-link {border-color:#b89532;}
+.aquaworld-showcase-hero .aquapro-hero-caption {left:4%;right:8%;bottom:22px;color:#aeb8bd;}
+.aquaworld-hero-social {position:absolute;z-index:3;left:4%;bottom:75px;color:#d2b24e;font-size:9px;letter-spacing:2px;}
+.aquaworld-hero-social span {display:block;margin-top:8px;color:#c4cbd0;letter-spacing:1px;}
+@media (max-width: 760px) {
+  .aquaworld-showcase-hero {min-height:780px;align-items:flex-end;}
+  .aquaworld-showcase-fish {width:100%;height:54%;inset:0 0 auto;}
+  .aquaworld-showcase-fish video {padding:55px 0 0;object-position:center 35%;}
+  .aquaworld-showcase-hero .aquapro-hero-shade {background:linear-gradient(180deg,rgba(3,9,14,.02) 0%,rgba(3,9,14,.08) 35%,#03090e 55%,#03090e 100%);}
+  .aquaworld-showcase-copy {width:100%;margin:0;padding:370px 8% 105px;}
+  .aquaworld-showcase-copy h1 {font-size:54px;}
+  .aquaworld-hero-count {right:4%;top:18%;height:36%;}
+  .aquaworld-hero-social {display:none;}
+}
