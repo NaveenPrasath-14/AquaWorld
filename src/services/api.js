@@ -1,7 +1,7 @@
 import axios from "axios"
 
-const api = axios.create({
-  baseURL: "http://localhost:3001"
+const API = axios.create({
+  baseURL: "https://aquaworld-1-17va.onrender.com"
 })
 
 export const getFish = () => api.get("/fish")
